@@ -12,7 +12,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "*",
+    origin: "https://bhargav-j.github.io",
   })
 );
 app.use(cookieParser());
