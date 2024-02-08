@@ -12,7 +12,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://bhargav-j.github.io/MERN_Authentication_using_JWT",
+    origin: "*",
   })
 );
 app.use(cookieParser());
