@@ -8,12 +8,17 @@ const router = require("./routes/user-routes");
 
 const app = express();
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+// app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: "https://bhargav-j.github.io/MERN_Authentication_using_JWT",
+  })
+);
 app.use(cookieParser());
 app.use(express.json());
 
 app.use("/api", router);
-
 
 // Connect mongoDB to the mongoose
 mongoose
