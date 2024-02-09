@@ -81,7 +81,8 @@ const login = async (req, res, next) => {
     path: "/",
     expires: new Date(Date.now() + 1000 * 80),
     httpOnly: true,
-    sameSite: "Lax",
+    sameSite: "None",
+    secure : true
   });
 
   return res.status(200).json({
