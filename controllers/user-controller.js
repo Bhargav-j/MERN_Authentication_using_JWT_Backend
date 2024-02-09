@@ -162,7 +162,8 @@ const refreshToken = (req, res, next) => {
       path: "/",
       expires: new Date(Date.now() + 1000 * 80),
       httpOnly: true,
-      sameSite: "Lax",
+      sameSite: "None",
+      secure : true
     });
 
     // assign userID in the request
